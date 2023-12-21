@@ -1,7 +1,7 @@
 import { createPortal } from "react-dom";
 import { Container, ListBox, Wind } from "./App.styled";
 import { Box } from "./Box";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const App = () => {
   const [box, setBox] = useState(null);
