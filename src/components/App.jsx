@@ -14,8 +14,13 @@ export const App = () => {
   return (
     <Container>
     <ListBox onClick={(e) => {
+            if (box === e.target) {
+              setIsView(false)
+              setBox(null);
+              return
+            }
             setBox(e.target);
-            setIsView(!isView);
+            setIsView(true);
           }}>
 
       { arr.map( (item, index) => 
